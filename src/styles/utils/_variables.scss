@@ -1,0 +1,47 @@
+$font-base: 16;
+$fonts: (56, 32, 24, 20, 18, 16, 14, 12);
+
+$white: #fff;
+$black: #000;
+
+$colors: (
+  bg: $black,
+  heading: $white,
+  icon: $white,
+  link: $white,
+  neutral-100: #171717,
+  neutral-200: #323232,
+  neutral-300: #4F4F4F,
+  neutral-400: #676767,
+  neutral-500: #7C7C7C,
+  neutral-600: #A6A6A6,
+  neutral-700: #C3C3C3,
+  neutral-800: #E4E4E4,
+  neutral-900: #F1F1F1,
+  accent-pink: #E22A6D,
+);
+
+$dark-colors: (
+  bg: $black,
+  heading: $white,
+  icon: $white,
+  link: $white,
+  neutral-100: #171717,
+  neutral-200: #323232,
+  neutral-300: #4F4F4F,
+  neutral-400: #676767,
+  neutral-500: #7C7C7C,
+  neutral-600: #A6A6A6,
+  neutral-700: #C3C3C3,
+  neutral-800: #E4E4E4,
+  neutral-900: #F1F1F1,
+);
+
+$breakpoints: (
+  xs: 482px,
+  s: 640px,
+  m: 992px,
+  l: 1280px,
+  xl: 1680px,
+  xxl: 1920px,
+);

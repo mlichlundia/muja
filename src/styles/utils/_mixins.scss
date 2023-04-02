@@ -1,0 +1,62 @@
+@use "variables" as *;
+@use "functions" as *;
+
+@mixin generate-fonts() {
+  @each $font in $fonts {
+    --font-size-#{$font}: #{rem($font)};
+  }
+}
+
+@mixin generate-colors() {
+  @each $key, $value in $colors {
+    --color-#{$key}: #{$value};
+  }
+}
+
+@mixin generate-dark-colors() {
+  @each $key, $value in $dark-colors {
+    --color-#{$key}: #{$value};
+  }
+}
+
+@mixin generate-breakpoints() {
+  @each $key, $value in $breakpoints {
+    --breakpoint-#{$key}: #{$value};
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: get-breakpoint(xs)) {
+    @content;
+  }
+}
+
+@mixin s {
+  @media screen and (max-width: get-breakpoint(s)) {
+    @content;
+  }
+}
+
+@mixin m {
+  @media screen and (max-width: get-breakpoint(m)) {
+    @content;
+  }
+}
+
+@mixin l {
+  @media screen and (max-width: get-breakpoint(l)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (max-width: get-breakpoint(xl)) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (max-width: get-breakpoint(xxl)) {
+    @content;
+  }
+}
