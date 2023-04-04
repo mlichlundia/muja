@@ -28,7 +28,7 @@
               "src/assets",
               "src/manifest.webmanifest"
             ],
-            "styles": ["src/styles/styles.scss"],
+            "styles": ["src/styles/styles.scss", "src/styles/fonts.scss"],
             "scripts": [],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
@@ -97,7 +97,7 @@
               "src/assets",
               "src/manifest.webmanifest"
             ],
-            "styles": ["src/styles/styles.scss"],
+            "styles": ["src/styles/styles.scss", "src/styles/fonts.scss"],
             "scripts": []
           }
         }
