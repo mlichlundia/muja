@@ -1,0 +1,16 @@
+@use 'src/styles/styles' as *;
+
+.contact-link {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+  padding: rem(10) rem(20);
+  font-weight: 400;
+  border: 1px solid color(neutral-200);
+  border-radius: rem(45);
+
+  &:hover {
+    background: color(neutral-200);
+  }
+}

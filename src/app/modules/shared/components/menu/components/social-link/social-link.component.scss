@@ -1,0 +1,15 @@
+@use 'src/styles/styles' as *;
+
+.social-link {
+  width: rem(48);
+  height: rem(48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color(neutral-200);
+  border-radius: 50%;
+
+  &:hover {
+    background: color(neutral-200);
+  }
+}

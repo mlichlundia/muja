@@ -1,0 +1,47 @@
+@use 'src/styles/styles' as *;
+
+:host {
+  color: color(heading);
+}
+
+nav {
+  max-width: rem(824);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: rem(100);
+  margin-left: auto;
+  background: color(neutral-100);
+}
+
+.menu-group {
+  display: flex;
+  gap: rem(200);
+  margin-bottom: rem(100);
+}
+
+.menu-block {
+  h2 {
+    width: rem(376);
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  h5 {
+    font-weight: 400;
+    text-transform: capitalize;
+    color: color(neutral-700);
+    margin-bottom: rem(32);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+
+    &-contacts {
+      gap: rem(8);
+    }
+  }
+}
