@@ -1,0 +1,37 @@
+<nav>
+  <app-menu-icon></app-menu-icon>
+  <div class="menu-group">
+    <div class="menu-block social" *ngIf="socials.length">
+      <h5>social</h5>
+      <div class="content content-social">
+        <app-social-link *ngFor="let social of socials" [link]="social.link">
+          <app-icon [name]="social.name"></app-icon>
+        </app-social-link>
+      </div>
+    </div>
+    <div class="menu-block menu">
+      <h5>menu</h5>
+      <div class="content content-menu">
+        <h2>
+          <a routerLink="/">
+            projects
+          </a>
+        </h2>
+        <h2>
+          <a routerLink="/">
+            about
+          </a>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="menu-block contacts">
+    <h5>contacts</h5>
+    <div class="content content-contacts">
+      <app-contact-link *ngFor="let contact of contacts" [link]="contact.link">
+        <app-icon *ngIf="contact.name" [name]="contact.name"></app-icon>
+        <p class="p3">{{contact.shownContact}}</p>
+      </app-contact-link>
+    </div>
+  </div>
+</nav>

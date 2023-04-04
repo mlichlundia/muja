@@ -1,0 +1,7 @@
+export enum ICONS {
+  INSTAGRAM,
+  BEHANCE,
+  DRIBBLE,
+  TELEGRAM,
+  WHATSAPP
+}
