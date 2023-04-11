@@ -1,10 +1,9 @@
 <nav>
-  <app-menu-icon></app-menu-icon>
   <div class="menu-group">
-    <div class="menu-block social" *ngIf="socials.length">
+    <div class="menu-block social" *ngIf="contactUser.socials?.length">
       <h5>social</h5>
       <div class="content content-social">
-        <app-social-link *ngFor="let social of socials" [link]="social.link">
+        <app-social-link *ngFor="let social of contactUser.socials" [link]="social.link">
           <app-icon [name]="social.name"></app-icon>
         </app-social-link>
       </div>
@@ -28,7 +27,7 @@
   <div class="menu-block contacts">
     <h5>contacts</h5>
     <div class="content content-contacts">
-      <app-contact-link *ngFor="let contact of contacts" [link]="contact.link">
+      <app-contact-link *ngFor="let contact of contactUser.contacts" [link]="contact.link">
         <app-icon *ngIf="contact.name" [name]="contact.name"></app-icon>
         <p class="p3">{{contact.shownContact}}</p>
       </app-contact-link>

@@ -4,7 +4,7 @@ import { RouterModule } from "@angular/router";
 import { SidebarComponent } from './components/menu/sidebar/sidebar.component';
 import { MenuComponent } from './components/menu/components/menu/menu.component';
 import { SocialLinkComponent } from './components/menu/components/social-link/social-link.component';
-import { MenuIconComponent } from './components/menu/components/menu-icon/menu-icon.component';
+import { MenuButtonComponent } from './components/menu/components/menu-button/menu-button.component';
 import { IconComponent } from './components/UI/icon/icon.component';
 import { ContactLinkComponent } from './components/menu/components/contact-link/contact-link.component';
 
@@ -13,7 +13,7 @@ import { ContactLinkComponent } from './components/menu/components/contact-link/
     SidebarComponent,
     MenuComponent,
     SocialLinkComponent,
-    MenuIconComponent,
+    MenuButtonComponent,
     IconComponent,
     ContactLinkComponent,
   ],
@@ -25,7 +25,7 @@ import { ContactLinkComponent } from './components/menu/components/contact-link/
     SidebarComponent,
     MenuComponent,
     SocialLinkComponent,
-    MenuIconComponent,
+    MenuButtonComponent,
     IconComponent,
   ]
 })
