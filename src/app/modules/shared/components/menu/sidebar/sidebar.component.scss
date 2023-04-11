@@ -1,0 +1,27 @@
+@use 'src/styles/styles' as *;
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility .25s, backdrop-filter .25s;
+
+  .menu {
+    transform: translate(rem(824));
+    transition: transform .25s;
+  }
+
+  &.active {
+    backdrop-filter: blur(rem(8));
+    -webkit-backdrop-filter: blur(rem(8));
+    visibility: visible;
+
+    .menu {
+      transform: translate(0);
+    }
+  }
+}

@@ -1,11 +1,16 @@
 @use 'src/styles/styles' as *;
 
 :host {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  height: 100%;
   color: color(heading);
 }
 
 nav {
   max-width: rem(824);
+  width: rem(824);
   height: 100%;
   display: flex;
   flex-direction: column;

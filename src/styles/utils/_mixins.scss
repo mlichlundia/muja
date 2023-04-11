@@ -22,6 +22,7 @@
 @mixin generate-breakpoints() {
   @each $key, $value in $breakpoints {
     --breakpoint-#{$key}: #{$value};
+    font-size: get-breakpoint-font($key);
   }
 }
 

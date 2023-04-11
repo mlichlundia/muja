@@ -1,0 +1,15 @@
+@use 'src/styles/styles' as *;
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(32) rem(64);
+  font-weight: 600;
+  color: color(heading);
+  z-index: 1000;
+}

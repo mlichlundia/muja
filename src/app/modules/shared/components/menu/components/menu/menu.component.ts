@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
-import { SocialInterface } from "../../../../interfaces/user/social.interface";
-import { ContactInterface } from "../../../../interfaces/user/contact.interface";
-import { USER_MOCK } from "../../../../mocks/user.mock";
+import { Component, OnInit } from '@angular/core';
+import { UserService } from "../../../../services/user/user.service";
+import { UserInterface } from "../../../../interfaces/user/user.interface";
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent {
-  public socials: SocialInterface[] = USER_MOCK.socials
-  public contacts: ContactInterface[] = USER_MOCK.contacts
+export class MenuComponent implements OnInit {
+  public contactUser!: UserInterface
+
+  constructor(private userService: UserService) {}
+
+  ngOnInit() {
+    this.contactUser = this.userService.contactUser
+  }
 }
