@@ -1,0 +1,23 @@
+@use 'src/styles/styles' as *;
+
+:host {
+  --icon-height: #{rem(22)};
+  --icon-width: #{rem(22)};
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  position: relative;
+  display: inline-block;
+  height: var(--icon-height);
+  width: var(--icon-width);
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
