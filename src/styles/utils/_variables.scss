@@ -1,40 +1,35 @@
 $font-base: 16;
-$fonts: (56, 48, 32, 24, 20, 18, 16, 14, 12);
-
-$white: #fff;
-$black: #000;
+$fonts: (64, 40, 24, 20, 18, 16, 14);
 
 $colors: (
-  bg: $white,
-  heading: $black,
-  icon: $black,
-  link: $black,
-  neutral-100: #F1F1F1,
-  neutral-200: #E4E4E4,
-  neutral-300: #4F4F4F,
-  neutral-400: #C3C3C3,
-  neutral-500: #A6A6A6,
-  neutral-600: #7C7C7C,
-  neutral-700: #323232,
-  neutral-800: #676767,
-  neutral-900: #171717,
-  accent-pink: #E22A6D,
+  white: #fff,
+  black: #000,
+  neutral-200: #3F3A51,
+  neutral-300: #676773,
+  neutral-400: #9C99A4,
+  neutral-600: #C1C1CE,
+  neutral-700: #EDEDF1,
+  neutral-800: #FCFCFE,
+  neutral-900: #F7F7FB,
+  accent-800: #F2397C,
+  accent-900: #E52A6E,
+
+  bg: var(--color-neutral-900),
+  heading: var(--color-neutral-200),
+  icon: var(--color-neutral-200)
 );
 
 $dark-colors: (
-  bg: $black,
-  heading: $white,
-  icon: $white,
-  link: $white,
-  neutral-100: #171717,
-  neutral-200: #323232,
-  neutral-300: #4F4F4F,
-  neutral-400: #676767,
-  neutral-500: #7C7C7C,
-  neutral-600: #A6A6A6,
-  neutral-700: #C3C3C3,
-  neutral-800: #E4E4E4,
-  neutral-900: #F1F1F1,
+  neutral-300: #CECBD6,
+  neutral-400: #A19DAC,
+  neutral-600: #6B667A,
+  neutral-700: #2F2C3A,
+  neutral-800: #1F1D2B,
+  neutral-900: #171422,
+
+  bg: var(--color-neutral-900),
+  heading: var(--color-white),
+  icon: var(--color-neutral-300)
 );
 
 $breakpoints: (

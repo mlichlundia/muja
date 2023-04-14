@@ -27,37 +27,37 @@
 }
 
 @mixin xs {
-  @media screen and (max-width: get-breakpoint(xs)) {
+  @media screen and (min-width: get-breakpoint(xs)) {
     @content;
   }
 }
 
 @mixin s {
-  @media screen and (max-width: get-breakpoint(s)) {
+  @media screen and (min-width: get-breakpoint(s)) {
     @content;
   }
 }
 
 @mixin m {
-  @media screen and (max-width: get-breakpoint(m)) {
+  @media screen and (min-width: get-breakpoint(m)) {
     @content;
   }
 }
 
 @mixin l {
-  @media screen and (max-width: get-breakpoint(l)) {
+  @media screen and (min-width: get-breakpoint(l)) {
     @content;
   }
 }
 
 @mixin xl {
-  @media screen and (max-width: get-breakpoint(xl)) {
+  @media screen and (min-width: get-breakpoint(xl)) {
     @content;
   }
 }
 
 @mixin xxl {
-  @media screen and (max-width: get-breakpoint(xxl)) {
+  @media screen and (min-width: get-breakpoint(xxl)) {
     @content;
   }
 }
