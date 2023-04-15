@@ -20,7 +20,7 @@ import { SharedModule } from "./modules/shared/shared.module";
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
