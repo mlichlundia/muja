@@ -20,3 +20,8 @@ body {
 main {
   color: color(heading);
 }
+
+::selection {
+  color: color(white);
+  background: color(accent-900);
+}

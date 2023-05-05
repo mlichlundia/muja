@@ -1,0 +1,20 @@
+@use 'src/styles/styles' as *;
+
+:host {
+  position: relative;
+  max-height: 100%;
+  padding: 0 rem(32) rem(32);
+  display: block;
+  border-radius: rem(20);
+  background: color(dashboard-card-bg);
+  overflow: auto;
+}
+
+h3 {
+  position: sticky;
+  top: 0;
+  padding: rem(32) 0 rem(16);
+  text-transform: capitalize;
+  background: color(dashboard-card-bg);
+  z-index: 1;
+}

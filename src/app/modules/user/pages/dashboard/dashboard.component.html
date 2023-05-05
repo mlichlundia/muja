@@ -1,1 +1,14 @@
-<p>dashboard works!</p>
+<header>
+  <p class="p-4 greetings">Welcome back, {{userService.user.name}}</p>
+  <h1>{{projectsService.currentProject.title}}</h1>
+</header>
+
+<div class="dashboard">
+  <app-documents
+      [documents]="projectsService.currentProject.documents"
+      [links]="projectsService.currentProject.links"
+  ></app-documents>
+  <app-documents></app-documents>
+  <app-documents></app-documents>
+  <app-documents></app-documents>
+</div>

@@ -4,5 +4,5 @@ export interface TaskInterface {
 }
 
 export interface MajorTaskInterface extends TaskInterface {
-  subtasks: TaskInterface[]
+  subtasks?: TaskInterface[]
 }

@@ -1,4 +1,4 @@
-import { SocialInterface } from "./social.interface";
+import { LinkInterface } from "./linkInterface";
 import { ContactInterface } from "./contact.interface";
 import { RoleType } from "./role.type";
 
@@ -7,7 +7,7 @@ export interface UserInterface {
   role: RoleType;
   name: string;
   lastName: string;
-  socials?: SocialInterface[];
+  socials?: LinkInterface[];
   contacts: ContactInterface[];
   projectIds: number[];
 }

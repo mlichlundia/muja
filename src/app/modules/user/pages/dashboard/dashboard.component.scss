@@ -1,0 +1,25 @@
+@use 'src/styles/styles' as *;
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  margin-bottom: rem(64);
+
+  .greetings {
+    color: color(text-1);
+  }
+}
+
+.dashboard {
+  $header-height: #{rem(240)};
+  $footer-height: #{rem(114)};
+
+  height: calc(100vh - $header-height - $footer-height);
+  display: flex;
+  gap: rem(16);
+
+  > :nth-child {
+    width: calc(100% / 4 - #{rem(16)} * 3);
+  }
+}

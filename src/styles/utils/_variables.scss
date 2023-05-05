@@ -13,10 +13,15 @@ $colors: (
   neutral-900: #F7F7FB,
   accent-800: #F2397C,
   accent-900: #E52A6E,
-
   bg: var(--color-neutral-900),
+  icon: var(--color-neutral-600),
+  menu-icon: var(--color-neutral-300),
+  border: var(--color-neutral-700),
   heading: var(--color-neutral-200),
-  icon: var(--color-neutral-200)
+  text-1: var(--color-neutral-300),
+  text-2: var(--color-neutral-400),
+  dashboard-card-bg: var(--color-neutral-800),
+  dashboard-list-item-bg: var(--color-neutral-900),
 );
 
 $dark-colors: (
@@ -26,10 +31,15 @@ $dark-colors: (
   neutral-700: #2F2C3A,
   neutral-800: #1F1D2B,
   neutral-900: #171422,
-
   bg: var(--color-neutral-900),
+  icon: var(--color-neutral-600),
+  menu-icon: var(--color-neutral-300),
+  border: var(--color-neutral-700),
   heading: var(--color-white),
-  icon: var(--color-neutral-300)
+  text-1: var(--color-neutral-300),
+  text-2: var(--color-neutral-400),
+  dashboard-card-bg: var(--color-neutral-800),
+  dashboard-list-item-bg: var(--color-neutral-700),
 );
 
 $breakpoints: (

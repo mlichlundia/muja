@@ -3,5 +3,7 @@ export enum ICONS {
   BEHANCE,
   DRIBBLE,
   TELEGRAM,
-  WHATSAPP
+  WHATSAPP,
+  DOCUMENT,
+  LINK
 }

@@ -19,7 +19,7 @@ export const USER_MOCK: UserInterface[] = [
     projectIds: [0]
   },
   {
-    id: 0,
+    id: 1,
     role: 'customer',
     name: 'Walter',
     lastName: 'White',
